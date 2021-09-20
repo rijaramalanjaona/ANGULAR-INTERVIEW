@@ -1,0 +1,49 @@
+<form novalidate [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label>Title : </label>
+    <input type="text"
+           id="title"
+           formControlName="title" />
+  </div>
+
+  <div>
+    <label>Cover : </label>
+    <input type="text"
+           id="cover"
+           formControlName="cover" />
+  </div>
+
+  <div>
+    <label>Author firstname : </label>
+    <input type="text"
+           id="authorFirstname"
+           formControlName="authorFirstname" />
+  </div>
+
+  <div>
+    <label>Author lastname : </label>
+    <input type="text"
+           id="authorLastname"
+           formControlName="authorLastname" />
+  </div>
+
+  <div>
+    <label>Release date : </label>
+    <input type="text"
+           id="releaseDate"
+           formControlName="releaseDate" />
+  </div>
+
+  <div>
+    <label>Page count : </label>
+    <input type="number"
+           id="pageCount"
+           formControlName="pageCount" />
+  </div>
+
+  <div>
+    <button type="submit">
+      Save
+    </button>
+  </div>
+</form>
